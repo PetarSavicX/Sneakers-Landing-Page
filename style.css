@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    width: fit-content;
+}
+
+.container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-content {
+    height: 100vh;
+    background-image: url("./imgs/sneakers-main.jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: bottom;
+    background-position-x: -150px;
+    object-fit: cover;
+    color: white;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: 3px solid burlywood;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 100px;
+}
+
+.nav ul {
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li {
+    transition-duration: 200ms;
+    user-select: none;
+}
+
+.nav ul li:hover {
+    transform: scale(1.1);
+    color: #FFD700;
+}
+
+.main-content-wrapper {
+    max-width: 50%;
+    margin-left: 50px;
+}
+
+.main-content-wrapper h1 {
+    font-size: 56px;
+    margin-bottom: 30px;
+}
+
+.main-content-wrapper p{
+    font-size: 24px;
+}
+
+.recomended-content {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.recomended-content h2 {
+    margin-bottom: 50px;
+    font-size: 46px;
+}
+
+.recomended-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.col {
+    width: 100%;
+    max-width: 100%;
+    transition-duration: 300ms;
+}
+.col:hover{
+    transform: scale(1.05);
+}
+
+.col-content {
+    border-radius: 10px;
+    border: 3px solid #141414;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    user-select: none;
+}
+
+.recomended-content-wrapper .col img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 50px;
+}
+
+.recomended-content-wrapper .col h3 {
+    margin-bottom: 10px;
+}
+
+.recomended-content-wrapper .col-content[id="2"] {
+    width: 110%;
+    height: 150%;
+    padding: 70px 30px;
+}
+
+.col-content[id="2"] img{
+    width: 70%;
+    height: auto;
+    margin-bottom: 70px;
+}
+.about-content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about-content .img-wrapper{
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+}
+.about-content .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.about-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 50%;
+}
+.about-content-wrapper h2{
+    font-size: 46px;
+}
+.about-content-wrapper p {
+    font-size: 20px;
+}
+.about-content-wrapper .about-btn{
+    padding: 10px 20px;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.about-content-wrapper .about-btn:hover{
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+.collaborate-content{
+    width: 100%;
+    height: 70vh;
+    background-image: url('./imgs/sneakers-6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+}
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.50);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.collaborate-content-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    text-shadow: 0px 0px 2px 0px #141414;
+}
+
+.collaborate-content-wrapper h2{
+    font-size: 46px;
+}
+
+.collaborate-content-wrapper p {
+    font-size: 20px;
+}
+
+.collaborate-content-wrapper .collaborate-btn{
+    padding: 15px 30px;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.collaborate-content-wrapper .collaborate-btn:hover{
+    color: black;
+    border: 3px solid black;
+    background-color: white;
+    transform: scale(1.1);
+}
+.contact-content{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: wheat;
+}
+.contact-form{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contact-form h2{
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-form div label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.contact-form div input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.contact-form div textarea{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 5px;
+    resize: none;
+}
+.contact-form .submit-btn{
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    transition-duration: 200ms;
+}
+
+.contact-form .submit-btn:hover{
+    transform: scale(1.1);
+    background-color: #141414;
+    color: white;
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #141414;
+    border-top: 2px solid gray;
+    padding: 10px;
+}
+.copyright span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.copyright span img{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 769px) {
+    .main-content-wrapper {
+        margin-left: 30px;
+    }
+    
+    .main-content-wrapper h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .main-content-wrapper p{
+        font-size: 20px;
+    }
+
+    .recomended-content-wrapper .col img {
+        width: 70%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 50px;
+    }
+    
+    .recomended-content-wrapper .col h3 {
+        margin-bottom: 10px;
+    }
+    
+    .recomended-content-wrapper .col-content[id="2"] {
+        width: 110%;
+        padding: 50px 10px;
+        height: 90vh;
+    }
+
+    .col-content {
+        padding: 30px 10px;
+        height: 90vh;
+        overflow: auto;
+    }
+    
+    .col-content[id="2"] img{
+        width: 70%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .about-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        max-width: 50%;
+    }
+    .about-content-wrapper h2{
+        font-size: 36px;
+    }
+    .about-content-wrapper p {
+        font-size: 16px;
+    }
+    .about-content-wrapper p br[id='br2']{
+        display: none;
+    }
+
+    .collaborate-content{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .main-content{
+        height: 500px !important;
+    }
+    .nav{
+        margin-bottom: 50px;
+    }
+    .recomended-content-wrapper{
+        flex-direction: column;
+    }
+    .col-content{
+        height: auto;
+        padding: 20px;
+    }
+    .col-content[id='2']{
+        height: auto !important;
+        padding: 20px !important;
+    }
+    .about-content {
+        gap: 50px;
+    }
+    .about-content-wrapper{
+        gap: 30px;
+    }
+
+    .collaborate-content{
+        height: 500px;
+    }
+    .collaborate-content-wrapper h2{
+        font-size: 36px;
+    }
+    .collaborate-content-wrapper p{
+        font-size: 16px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .contact-form h2{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width:520px) {
+    .main-content{
+        background-size: 200%;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    .main-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-right: 30px;
+        text-align: center;
+        align-items: center;
+    }
+    .main-content-wrapper h1{
+        margin-bottom: 20px;
+    }
+    .main-content-wrapper p {
+        font-size: 16px;
+    }
+    .recomended-content h2{
+        font-size: 36px;
+    }
+    .about-content{
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+    .img-wrapper{
+        max-width: 100%;
+    }
+    .about-content-wrapper{
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .collaborate-content{
+        background-size: 150%;
+        background-position-x: -100px;
+    }
+    .collaborate-content-wrapper{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .contact-form{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main-content-wrapper h1{
+        font-size: 25px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+}
